@@ -1,0 +1,371 @@
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:     100%;
+    }
+    
+    body {
+    margin: 0;
+    background: #050402;
+    }
+    
+    img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: 20%;
+    }
+    
+    
+    /*--------------------------------------------------------------
+    Accessibility
+    --------------------------------------------------------------*/
+    /* Text meant only for screen readers */
+    .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    }
+    
+    .screen-reader-text:hover,
+    .screen-reader-text:active,
+    .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar */
+    }
+    
+    
+    /*--------------------------------------------------------------
+    Typography
+    --------------------------------------------------------------*/
+    body,
+    button,
+    input,
+    select,
+    textarea {
+    color: #404040;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    }
+    
+    h1,
+    h2,
+    h3 {
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+    }
+    
+    p {
+    margin: 0;
+    padding: 1em 0;
+    }
+   
+    
+    
+    /* Promo section */
+    
+    .logo,
+    .site-title {
+    text-align: center;
+    color: #f13806;
+    }
+    
+    .logo {
+    font-size: 8em;
+    }
+    
+    .site-title {
+    margin-top: -1em;
+    margin-bottom: 3em;
+    }
+    
+    /* Splash section */
+    
+    .splash {
+    background: #050402;
+    padding-bottom: 2em;
+    color: #ff7200;
+    }
+    
+    .splash-content {
+    padding: 1.5em;
+    }
+    
+    @media screen and (min-width: 600px) {
+    .splash-text {
+    columns: 2;
+    column-gap: 2em;
+    }
+    
+    .splash-text p {
+    padding-top: 0;
+    }
+    }
+    
+    /* Buckets section */
+    
+    .buckets {
+    padding: 2em 1em 1em;
+    background: #050402;
+    
+    
+    }
+    
+    .buckets ul {
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(5, 1fr);
+    
+    }
+    
+    .buckets .li1 {
+    margin-bottom: 1em;
+    background: #050402;
+    list-style-type: none; 
+    color: #f13806;
+    border: none;
+    }
+    .buckets .li1:hover {
+        
+        box-shadow: 0px 0px 30px 10px  #6e1902;
+        z-index: 2;
+        transition: 0.5s;
+        background: #f13806;
+        color: #050402;
+        border: none;
+    }
+
+    .buckets .li2 {
+        margin-bottom: 1em;
+        background: #050402;
+        list-style-type: none; 
+        color: #2751ce;
+        border: none;
+        }
+    .buckets .li2:hover {
+            
+        box-shadow: 0px 0px 30px 10px #162e75;
+        transition: 0.5s;
+        z-index: 2;
+        background: #2751ce;
+        color: #050402;
+        border: none;
+        }
+
+    .buckets .li3 {
+         margin-bottom: 1em;
+         background: #050402;
+         list-style-type: none; 
+         color: #d54bc5;
+         border: none;
+         }
+    .buckets .li3:hover {
+                
+        box-shadow: 0px 0px 30px 10px #a63599;
+        transition: 0.5s;
+        z-index: 2;
+        background: #d54bc5;
+        color: #050402;
+        border: none;
+        }
+
+    .buckets .li4 {
+        margin-bottom: 1em;
+        background: #050402;
+        list-style-type: none; 
+        color: #23e4ca;
+        border: none;
+        }
+    .buckets .li4:hover {
+                    
+        box-shadow: 0px 0px 30px 10px #189e8c;
+        z-index: 2;
+        transition: 0.5s;
+        background: #23e4ca;
+        color: #050402;
+        border: none;
+        }
+   
+    
+    .bucket {
+    padding: 1.5em;
+    }
+    
+    /* More section */
+    
+    .more {
+    padding: 2em;
+    text-align: center;
+    color: #2751ce;
+    }
+    
+    /* Twins section */
+    
+    .twin {
+    padding: 2em;
+    background: #050402;
+    color:  #d54bc5;
+    }
+    .twin:hover{
+        background:  #d54bc5;
+        color:  #050402;
+        transition: 0.5s;
+        z-index: 2;
+        box-shadow: 0px 0px 30px 10px #a63599;
+    }
+    .twin:last-of-type {
+    background: #050402;
+    color: #23e4ca;
+    }
+    .twin:last-of-type:hover{
+        background:  #23e4ca;
+        color:  #050402;
+        transition: 0.5s;
+        z-index: 2;
+        box-shadow: 0px 0px 30px 10px #189e8c;
+    }
+    
+    /* Colophon section */
+    .colophon {
+    padding: 2em;
+    background: #050402;
+    color: #f13806;
+    text-align: center;
+    }
+    
+    .colophon a {
+    color: #f13806;
+    text-decoration: none;
+    }
+    
+    .colophon a:hover,
+    .colophon a:focus {
+    border-bottom: 1px solid white;
+    }
+    
+    /*--------------------------------------------------------------
+    If no grid support, limit width to 50em and center align
+    --------------------------------------------------------------*/
+    @supports not (display: grid) {
+    .grid {
+    max-width: 50em;
+    margin: 0 auto;
+    }
+    }
+    
+    /*--------------------------------------------------------------
+    Use flex to create a three-bucket layout 
+    --------------------------------------------------------------*/
+ 
+    @media screen and (min-width: 900px) {
+    @supports (display: flex) {
+    
+    .buckets ul {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    .buckets li {
+    width: 24%;
+    text-align: center;
+    }
+    
+    }
+    }
+    @media screen and (min-width: 700px) and (max-width: 900px) {
+        @supports (display: flex) {
+        
+        .buckets ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+       
+        }
+        
+        .buckets li {
+        width: 40%;
+        text-align: center;
+        }
+        img{
+            height: auto;
+        }
+        
+        }
+        }
+    
+    /*--------------------------------------------------------------
+    CSS Grid layout for wider screens, when browser supports grid:
+    --------------------------------------------------------------*/
+    
+    @media screen and (min-width: 600px) {
+    /* Layout with CSS Grid */
+    @supports (display: grid) {
+    
+    /* Four-column layout. Two center columns have a total max width of 50em: */
+    .grid {
+    
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+    
+    /* Center items by placing them in the two center columns: */
+    .splash-content,
+    .more-content,
+    .buckets ul {
+    grid-column: 2/4;
+    }
+    
+    /* Use automatic grid placement + span to let each item span two columns:*/
+    .twin,
+    .colophon aside {
+    grid-column: span 2;
+    }
+    
+    }
+    }
+
+
+    @media screen and (min-width: 700px) {
+        
+        @supports (display: grid) {
+        
+        /* Four-column layout. Two center columns have a total max width of 50em: */
+        .grid {
+        
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+        }
+        
+        /* Center items by placing them in the two center columns: */
+        .splash-content,
+        .more-content,
+        .buckets ul {
+        grid-column: 2/4;
+        }
+        
+        /* Use automatic grid placement + span to let each item span two columns:*/
+        .twin,
+        .colophon aside {
+        grid-column: span 2;
+        }
+        
+        }
+        }
